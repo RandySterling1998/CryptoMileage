@@ -1,0 +1,153 @@
+/* Homepage structure */
+
+/* Main section */
+main {
+  height: 80vh;
+  width: 100%;
+}
+
+/* Welcome content */
+.welcomeWrapper {
+  height: 15rem;
+  border-radius: 15px;
+  margin: 20px 0 20px 0;
+  background-color: fff;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.welcomeWrapper > .welcomeText {
+  color: #222;
+}
+
+.showcase {
+  height: 15rem;
+  margin: 15px 0;
+  border-radius: 10px;
+  display: flex;
+}
+
+.showcaseText {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.txthighlight {
+  font-weight: bold;
+}
+
+/* SVG Icon */
+svg {
+  height: 2rem;
+  margin: 1rem;
+}
+
+/* Table Section */
+
+.table-warpper-container {
+  width: auto;
+  margin: auto;
+}
+
+#Cryptocurrency-table {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 16px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* TRENDING SECTION */
+#trending {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.trendingRecipient {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (min-width: 1224px) {
+  #trending {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.trendingRecipient > .trendingRecipientSub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.trendingRecipient > .trendingRecipientSub > p {
+  margin: 0 10px 0 0;
+}
+
+.coinRak {
+  font-size: 12px;
+  width: 40px;
+  align-self: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Table styling */
+#Cryptocurrency-table {
+  margin-top: 0;
+}
+
+.tableTitle {
+  margin: 5px 0;
+}
+
+.coinNameDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.coinNameDiv > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.coinRank {
+  background-color: #000;
+  color: #fff;
+  width: 2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.coinSymbol {
+  font-size: 10px;
+}
+
+.coinImageTag {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+.priceChanges {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceChanges > span {
+  font-size: 12px;
+}
+
+/* Footer section */
+
+footer {
+  height: 5rem;
+  position: relative;
+}

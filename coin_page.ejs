@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head'); %>
+</head>
+    <body>
+        
+        <header>
+            <%- include("../partials/header"); %> 
+        </header>
+
+        <div id="breadcrumb-outterwrapper">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-item-list">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="/coins"><a href="/coins">coins</a></li>
+                    <li class="breadcrumb-item active" aria-current="/coins/<%=coin_name%>"><%=coin_name%></li>
+                </ol>
+            </nav>
+        </div>
+
+
+        <div class="container coin-header">
+            <div class="container ">
+                <img src="<%=thumbnail%>" alt="thumbnail" style="width: 75px; height: 75px;">
+            </div>
+            <div class="container">
+                <div class="h1"><%=coin_name%> price</div>
+                <div class="h6">(<%=symbol%> / usd)</div>
+            </div>
+        </div>
+
+        <div class="container generic-container coin-chart">
+            <p>Saved for chart</p>
+        </div>
+
+        <div class="container generic-container stats">
+            <h3>Stats</h3>
+            <div class="stats-info">
+                <div class="container"><h6>Twitter followers</h6><%=coin_community_twitter_followers%></div>
+                <div class="container"><h6>Category</h6><%=coin_category%></div>
+            </div>
+        </div>    
+
+        <div class="container generic-container description">
+            <h3>Description</h3>
+            <div>
+                <p><%=coin_description%></p>
+            </div>
+        </div>
+
+
+        <button><a href="/">go back</a></button>
+
+    <%-include("../partials/footer"); %>
+    </body>
+</html>
